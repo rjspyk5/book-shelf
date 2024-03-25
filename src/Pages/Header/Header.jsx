@@ -43,7 +43,7 @@ export const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 font-work-sans">
+    <div className="navbar bg-base-100 font-work-sans py-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div
