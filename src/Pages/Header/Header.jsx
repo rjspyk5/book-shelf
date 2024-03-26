@@ -40,6 +40,30 @@ export const Header = () => {
           Pages to Read
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/coming"
+          className={({ isActive }) =>
+            isActive
+              ? "border border-pri bg-transparent text-pri font-semibold"
+              : ""
+          }
+        >
+          Coming soon
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/bestseller"
+          className={({ isActive }) =>
+            isActive
+              ? "border border-pri bg-transparent text-pri font-semibold"
+              : ""
+          }
+        >
+          Bestseller books
+        </NavLink>
+      </li>
     </>
   );
   return (
@@ -81,7 +105,7 @@ export const Header = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 space-x-3">{menu}</ul>
+        <ul className="menu menu-horizontal ">{menu}</ul>
       </div>
       <div className="navbar-end flex gap-2 *:text-[white]">
         <NavLink className="btn-sm btn md:btn-md bg-pri  ">Button</NavLink>
