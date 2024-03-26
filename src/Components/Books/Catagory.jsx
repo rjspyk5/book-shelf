@@ -1,12 +1,17 @@
 import { PropTypes } from "prop-types";
 
-export const Catagory = ({ tagname }) => {
+export const Catagory = (props) => {
   return (
-    <div className="font-work-sans font-medium bg-[#23be0a0D] text-pri px-4 py-2 rounded-full">
-      {tagname}
+    <div
+      className={`${
+        props.class ? props.class : "bg-[#23be0a0D] text-pri font-medium"
+      } font-work-sans   px-4 py-2 rounded-full`}
+    >
+      {props.tagname}
     </div>
   );
 };
 Catagory.propTypes = {
   tagname: PropTypes.string,
+  class: PropTypes.string,
 };
