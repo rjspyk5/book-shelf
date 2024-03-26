@@ -1,8 +1,27 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { Catagory } from "../Books/Catagory";
+import {
+  getIteam,
+  setIteam,
+  removeIteam,
+} from "../../assets/utilites/LocalStorage";
 
 export const BookDetails = () => {
+  // adding on localstorage fucntionality
+  const handleClick = (key, value) => {
+    if (key === "read") {
+      removeIteam("wishlist", value);
+      const test = setIteam(key, value);
+    } else {
+      const preReadedBolg = getIteam("read");
+      const checker = preReadedBolg.find((el) => el === value);
+      if (!checker) {
+        const test = setIteam(key, value);
+      }
+    }
+  };
+  // adding on localstorage fucntionality end
   const { data } = useLoaderData();
   const { bookId: id } = useParams();
   const {
@@ -45,28 +64,38 @@ export const BookDetails = () => {
           ))}
         </div>
         <table className="table max-w-96">
-          <tr>
-            <td>Number of Pages:</td>
-            <td className="font-semibold"> {totalPages}</td>
-          </tr>
-          <tr>
-            <td>Publisher:</td>
-            <td className="font-semibold">{publisher}</td>
-          </tr>
-          <tr>
-            <td>Year of publishing:</td>
-            <td className="font-semibold">{yearOfPublishing}</td>
-          </tr>
-          <tr>
-            <td>Rating:</td>
-            <td className="font-semibold">{rating}</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Number of Pages:</td>
+              <td className="font-semibold"> {totalPages}</td>
+            </tr>
+            <tr>
+              <td>Publisher:</td>
+              <td className="font-semibold">{publisher}</td>
+            </tr>
+            <tr>
+              <td>Year of publishing:</td>
+              <td className="font-semibold">{yearOfPublishing}</td>
+            </tr>
+            <tr>
+              <td>Rating:</td>
+              <td className="font-semibold">{rating}</td>
+            </tr>
+          </tbody>
         </table>
         <div className="space-x-4 mt-3">
-          <butoon className="btn bg-transparent border border-[#1313134D]">
+          <button
+            onClick={() => handleClick("read", parseInt(id))}
+            className="btn bg-transparent border border-[#1313134D]"
+          >
             Read
-          </butoon>
-          <butoon className="btn bg-[#50B1C9] text-[white]">Wishlist</butoon>
+          </button>
+          <button
+            onClick={() => handleClick("wishlist", parseInt(id))}
+            className="btn bg-[#50B1C9] text-[white]"
+          >
+            Wishlist
+          </button>
         </div>
       </div>
     </div>
