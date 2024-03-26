@@ -1,14 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { Catagory } from "../Books/Catagory";
 import { ToastContainer, toast } from "react-toastify";
-
 import "react-toastify/dist/ReactToastify.css";
 import {
   getIteam,
   setIteam,
   removeIteam,
 } from "../../assets/utilites/LocalStorage";
-
 export const BookDetails = () => {
   // Toast function
   const notifySuccess = (msz) => toast.success(msz);
@@ -45,7 +43,7 @@ export const BookDetails = () => {
     tags,
     rating,
     author,
-    bookId,
+
     totalPages,
     publisher,
     yearOfPublishing,
@@ -66,7 +64,7 @@ export const BookDetails = () => {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 font-work-sans">
         <div className="flex rounded-md min-w-[500px]  justify-center bg-[#F3F3F3] items-center">
-          <img src="" alt="" className="rounded-md" />
+          <img src={image} alt="" className="rounded-md" />
         </div>
         <div>
           <div className="space-y-4 py-5 border-b flex-grow border-[#13131326]">

@@ -7,6 +7,8 @@ import axios from "axios";
 import { TabReadBooks } from "../Pages/ListedBooks/TabReadBooks";
 import { TabWishlistBooks } from "../Pages/ListedBooks/TabWishlistBooks";
 import { BookDetails } from "../Components/BookDetails/BookDetails";
+import { getIteam } from "../assets/utilites/LocalStorage";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -24,10 +26,12 @@ export const router = createBrowserRouter([
           {
             index: true,
             element: <TabReadBooks />,
+            loader: () => axios.get("/books.json"),
           },
           {
             path: "wishlist",
             element: <TabWishlistBooks />,
+            loader: () => axios.get("/books.json"),
           },
         ],
       },
@@ -35,7 +39,7 @@ export const router = createBrowserRouter([
       {
         path: "/:bookId",
         element: <BookDetails />,
-        loader: () => axios.get("books.json"),
+        loader: () => axios.get("/books.json"),
       },
     ],
   },
