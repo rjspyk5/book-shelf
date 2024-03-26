@@ -8,7 +8,7 @@
         "totalPages": 180,
         "rating": 4.5,
         "category": "Fiction",
-        "tags": ["Classic", "Romance", "Drama"],
+        "tags": [ "Romance", "Drama"],
         "publisher": "Scribner",
         "yearOfPublishing": 1925
     },
@@ -21,7 +21,7 @@
         "totalPages": 328,
         "rating": 4.8,
         "category": "Science Fiction",
-        "tags": ["Dystopian", "Political", "Social Commentary"],
+        "tags": ["Dystopian", "Political"],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
     },
@@ -34,7 +34,7 @@
         "totalPages": 336,
         "rating": 4.7,
         "category": "Fiction",
-        "tags": ["Coming-of-Age", "Legal Drama", "Southern Gothic"],
+        "tags": ["Coming-of-Age", "Legal Drama"],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
@@ -47,7 +47,7 @@
         "totalPages": 224,
         "rating": 4.6,
         "category": "Fiction",
-        "tags": ["Young Adult", "Psychological", "Rebellion"],
+        "tags": ["Psychological", "Rebellion"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -60,7 +60,7 @@
         "totalPages": 279,
         "rating": 4.9,
         "category": "Fiction",
-        "tags": ["Romance", "Satire", "British Literature"],
+        "tags": ["Romance", "Satire"],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
     },
@@ -73,7 +73,7 @@
         "totalPages": 310,
         "rating": 4.8,
         "category": "Fantasy",
-        "tags": ["Adventure", "Quest", "Middle-earth"],
+        "tags": ["Adventure", "Quest"],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
     },
@@ -86,7 +86,7 @@
         "totalPages": 1178,
         "rating": 4.9,
         "category": "Fantasy",
-        "tags": ["Epic", "Adventure", "Magic"],
+        "tags": [ "Adventure", "Magic"],
         "publisher": "Allen & Unwin",
         "yearOfPublishing": 1954
     },
@@ -99,7 +99,7 @@
         "totalPages": 332,
         "rating": 4.7,
         "category": "Fantasy",
-        "tags": ["Magic", "Wizardry", "Friendship"],
+        "tags": ["Magic",  "Friendship"],
         "publisher": "Bloomsbury",
         "yearOfPublishing": 1997
     },
