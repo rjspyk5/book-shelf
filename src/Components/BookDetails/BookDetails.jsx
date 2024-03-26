@@ -5,11 +5,22 @@ import { Catagory } from "../Books/Catagory";
 export const BookDetails = () => {
   const { data } = useLoaderData();
   const { bookId: id } = useParams();
-  const { review, image, bookName, category, tags, rating, author, bookId } =
-    data.find((el) => el.bookId === parseInt(id));
+  const {
+    review,
+    image,
+    bookName,
+    category,
+    tags,
+    rating,
+    author,
+    bookId,
+    totalPages,
+    publisher,
+    yearOfPublishing,
+  } = data.find((el) => el.bookId === parseInt(id));
 
   return (
-    <div className="grid grid-cols-2 gap-10 font-work-sans">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 font-work-sans">
       <div className="flex rounded-md min-w-[500px]  justify-center bg-[#F3F3F3] items-center">
         <img src="" alt="" className="rounded-md" />
       </div>
@@ -32,6 +43,30 @@ export const BookDetails = () => {
           {tags.map((el, idx) => (
             <Catagory key={idx} tagname={el} />
           ))}
+        </div>
+        <table className="table max-w-96">
+          <tr>
+            <td>Number of Pages:</td>
+            <td className="font-semibold"> {totalPages}</td>
+          </tr>
+          <tr>
+            <td>Publisher:</td>
+            <td className="font-semibold">{publisher}</td>
+          </tr>
+          <tr>
+            <td>Year of publishing:</td>
+            <td className="font-semibold">{yearOfPublishing}</td>
+          </tr>
+          <tr>
+            <td>Rating:</td>
+            <td className="font-semibold">{rating}</td>
+          </tr>
+        </table>
+        <div className="space-x-4 mt-3">
+          <butoon className="btn bg-transparent border border-[#1313134D]">
+            Read
+          </butoon>
+          <butoon className="btn bg-[#50B1C9] text-[white]">Wishlist</butoon>
         </div>
       </div>
     </div>
