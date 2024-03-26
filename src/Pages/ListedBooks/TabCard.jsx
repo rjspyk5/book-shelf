@@ -18,7 +18,7 @@ export const TabCard = ({ book }) => {
     yearOfPublishing,
   } = book;
   return (
-    <div className="flex gap-6 font-work-sans border p-5 border-[#13131326]">
+    <div className="flex gap-6 font-work-sans border p-5 rounded-lg border-[#13131326]">
       <div className="flex rounded-md  justify-center bg-[#F3F3F3] items-center">
         <img src={image} alt="" className="rounded-md" />
       </div>

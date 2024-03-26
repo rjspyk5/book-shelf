@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getIteam } from "../../assets/utilites/LocalStorage";
+import { TabCard } from "./TabCard";
 
 export const TabWishlistBooks = () => {
   const [booksData, setbooksData] = useState([]);
@@ -12,6 +13,12 @@ export const TabWishlistBooks = () => {
       setbooksData(matchingData);
     }
   }, [data]);
-  console.log(booksData);
-  return <div>TabReadBooks</div>;
+
+  return (
+    <div className="space-y-6 ">
+      {booksData.map((el) => (
+        <TabCard key={el.bookId} book={el} />
+      ))}
+    </div>
+  );
 };

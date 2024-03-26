@@ -13,7 +13,7 @@ export const TabReadBooks = () => {
       setbooksData(matchingData);
     }
   }, [data]);
-  console.log(booksData);
+
   return (
     <div className="space-y-6 ">
       {booksData.map((el) => (
