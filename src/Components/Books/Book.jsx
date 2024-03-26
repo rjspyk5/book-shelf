@@ -1,10 +1,15 @@
 import PropTypes from "prop-types";
 import { CiStar } from "react-icons/ci";
 import { Catagory } from "./Catagory";
+import { useNavigate } from "react-router-dom";
 export const Book = ({ book }) => {
-  const { image, bookName, category, tags, rating, author } = book;
+  const { image, bookName, category, tags, rating, author, bookId } = book;
+  const navigate = useNavigate();
   return (
-    <div className="p-6 flex flex-col rounded-2xl border border-[#13131326]">
+    <div
+      onClick={() => navigate(`${bookId}`)}
+      className="p-6 flex flex-col rounded-2xl border border-[#13131326]"
+    >
       <div className="flex min-w-[326px] min-h-[230px] justify-center bg-[#F3F3F3] items-center">
         <img src={image} alt="" className="rounded-md" />
       </div>

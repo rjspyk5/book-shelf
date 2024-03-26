@@ -7,7 +7,7 @@ export const Books = () => {
   useEffect(() => {
     axios.get("books.json").then((res) => setbooksData(res.data));
   }, []);
-  console.log(booksData);
+
   return (
     <div>
       <h1 className="text-4xl mt-16 md:mt-24 font-bold text-center ">Books</h1>

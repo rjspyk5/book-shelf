@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { NavLink, Outlet } from "react-router-dom";
+
 export const ListedBooks = () => {
   const [toggle, settoggle] = useState(true);
+
   return (
     <div>
       <h1 className="py-6 font-work-sans rounded-md text-center font-bold text-2xl bg-[#1313130D]">
@@ -31,14 +34,27 @@ export const ListedBooks = () => {
           </ul>
         </div>
       </div>
-      <div role="tablist" className="tabs tabs-lifted">
-        <a role="tab" className="tab">
-          Normal
-        </a>
-        <a role="tab" className="tab tab-active">
-          Normal
-        </a>
+      <div role="tablist" className="tabs-lifted font-work-sans">
+        <NavLink
+          to=""
+          role="tab"
+          className={({ isActive }) =>
+            isActive ? "tab tab-active text-[#13131380]" : "tab"
+          }
+        >
+          Read Books
+        </NavLink>
+        <NavLink
+          to="wishlist"
+          role="tab"
+          className={({ isActive }) =>
+            isActive ? "tab tab-active text-[#13131380]" : "tab"
+          }
+        >
+          Wishlist Books
+        </NavLink>
       </div>
+      <Outlet></Outlet>
     </div>
   );
 };
