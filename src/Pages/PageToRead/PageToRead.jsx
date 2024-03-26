@@ -9,7 +9,6 @@ import {
   CartesianGrid,
   ResponsiveContainer,
   Tooltip,
-  Legend,
 } from "recharts";
 
 import { getIteam } from "../../assets/utilites/LocalStorage";
