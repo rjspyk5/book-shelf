@@ -26,6 +26,11 @@ export const BookDetails = () => {
       const checker = preReadedBolg.find((el) => el === value);
       if (!checker) {
         const test = setIteam(key, value);
+        test
+          ? notifySuccess("Successfully to Wishlist")
+          : notifyError("You already added this on your Wishlist");
+      } else {
+        notifyError("You already added this on your readList");
       }
     }
   };
