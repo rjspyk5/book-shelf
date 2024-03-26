@@ -35,7 +35,11 @@ export const router = createBrowserRouter([
           },
         ],
       },
-      { path: "/read", element: <PageToRead /> },
+      {
+        path: "/read",
+        element: <PageToRead />,
+        loader: () => axios.get("/books.json"),
+      },
       {
         path: "/:bookId",
         element: <BookDetails />,
