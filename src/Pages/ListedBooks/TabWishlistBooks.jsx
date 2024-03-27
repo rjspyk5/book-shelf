@@ -14,9 +14,11 @@ export const TabWishlistBooks = () => {
       const prevData = getIteam("wishlist");
       const matchingData = data.filter((el) => prevData.includes(el.bookId));
       if (contextData === "publisher") {
-        console.log(matchingData);
+        const data = sortingFuction(matchingData, "publisher");
+        data.forEach((el) => console.log(el.publisher));
       } else if (contextData === "page") {
-        console.log(matchingData);
+        const data = sortingFuction(matchingData, "page");
+        console.log(data);
       } else if (contextData === "rating") {
         console.log(matchingData);
       } else {
