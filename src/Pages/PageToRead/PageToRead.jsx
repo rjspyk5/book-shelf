@@ -38,7 +38,7 @@ export const PageToRead = () => {
       setreadBooksData(readBooks);
     }
   }, [data]);
-  console.log(readBooksData);
+
   return (
     <>
       {readBooksData.length > 0 ? (

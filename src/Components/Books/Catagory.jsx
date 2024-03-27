@@ -5,7 +5,7 @@ export const Catagory = (props) => {
     <div
       className={`${
         props.class ? props.class : "bg-[#23be0a0D] text-pri font-medium"
-      } font-work-sans   px-4 py-2 rounded-full`}
+      } font-work-sans text-xs md:text-base px-2 md:px-4 py-2 rounded-full`}
     >
       {props.tagname}
     </div>
