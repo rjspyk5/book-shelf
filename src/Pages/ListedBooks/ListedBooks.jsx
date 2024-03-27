@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
-
+import { createContext } from "react";
+export const sortingContext = createContext();
 export const ListedBooks = () => {
   const [toggle, settoggle] = useState(true);
   const [tabToogle, settabToogle] = useState(true);
+  const [sortType, setsortType] = useState("default");
+  const handleSrotingClick = (value) => {
+    setsortType(value);
+  };
 
   return (
     <div>
@@ -26,13 +31,13 @@ export const ListedBooks = () => {
             tabIndex={0}
             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            <li onClick={() => handleSrotingClick("rating")}>
               <a>Rating</a>
             </li>
-            <li>
+            <li onClick={() => handleSrotingClick("page")}>
               <a>Number of pages</a>
             </li>
-            <li>
+            <li onClick={() => handleSrotingClick("publisher")}>
               <a>Publisher</a>
             </li>
           </ul>
@@ -56,7 +61,9 @@ export const ListedBooks = () => {
           Wishlist Books
         </NavLink>
       </div>
-      <Outlet test={"test"}></Outlet>
+      <sortingContext.Provider value={sortType}>
+        <Outlet></Outlet>
+      </sortingContext.Provider>
     </div>
   );
 };

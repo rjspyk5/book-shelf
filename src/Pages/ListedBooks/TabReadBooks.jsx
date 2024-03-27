@@ -1,18 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getIteam } from "../../assets/utilites/LocalStorage";
 import { TabCard } from "./TabCard";
+import { sortingContext } from "./ListedBooks";
 
 export const TabReadBooks = () => {
   const [booksData, setbooksData] = useState([]);
   const { data } = useLoaderData();
+  const contextData = useContext(sortingContext);
+
   useEffect(() => {
     if (data.length > 0) {
       const prevData = getIteam("read");
       const matchingData = data.filter((el) => prevData.includes(el.bookId));
-      setbooksData(matchingData);
+      if (contextData === "publisher") {
+        console.log(matchingData);
+      } else if (contextData === "page") {
+        console.log(matchingData);
+      } else if (contextData === "rating") {
+        console.log(matchingData);
+      } else {
+        setbooksData(matchingData);
+      }
     }
-  }, [data]);
+  }, [data, contextData]);
 
   return (
     <div className="space-y-6 ">
