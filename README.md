@@ -1,8 +1,11 @@
-# React + Vite
+# Website Name: BookShelf
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Live Link:
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Book Catalog**: Have books section where have different type of books.
+- **Book Details Page**: If someone click on any of books it will go on book details page.
+- **Wishlist & Readlist**:Can be add books on wishlist and readlist
+- **Sorting Option**:Have sorting option.Where can be sorted books by rating,publisher,pages.
+- **Bar charts**: Have a custom shape chart where can see how many pages to read.

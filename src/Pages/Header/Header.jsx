@@ -101,7 +101,7 @@ export const Header = () => {
           to="/"
           className="btn btn-sm md:btn-md btn-ghost  text-xl md:text-2xl font-bold"
         >
-          Books Hub
+          BookShelf
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
