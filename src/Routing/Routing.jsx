@@ -7,12 +7,13 @@ import axios from "axios";
 import { TabReadBooks } from "../Pages/ListedBooks/TabReadBooks";
 import { TabWishlistBooks } from "../Pages/ListedBooks/TabWishlistBooks";
 import { BookDetails } from "../Components/BookDetails/BookDetails";
-import { getIteam } from "../assets/utilites/LocalStorage";
+import { ErrorPage } from "../Components/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
       {
         path: "/books",
         element: <ListedBooks />,
+
         loader: () => axios.get("/books.json"),
         children: [
           {

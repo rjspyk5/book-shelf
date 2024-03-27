@@ -10,8 +10,12 @@ export const Book = ({ book }) => {
       onClick={() => navigate(`${bookId}`)}
       className="p-6 flex flex-col rounded-2xl border border-[#13131326]"
     >
-      <div className="flex min-w-[326px] min-h-[230px] justify-center bg-[#F3F3F3] items-center">
-        <img src={image} alt="" className="rounded-md" />
+      <div className="flex w-full py-10 rounded-lg justify-center bg-[#F3F3F3] items-center">
+        <img
+          src={image}
+          className="max-w-[120px] max-h-[166px] rounded-md"
+          alt=""
+        />
       </div>
       <div className="space-y-4 py-5 border-b flex-grow border-[#13131326] border-dashed">
         <div className="flex gap-3 items-center">
