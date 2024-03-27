@@ -5,6 +5,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export const ListedBooks = () => {
   const [toggle, settoggle] = useState(true);
+  const [tabToogle, settabToogle] = useState(true);
 
   return (
     <div>
@@ -39,25 +40,23 @@ export const ListedBooks = () => {
       </div>
       <div role="tablist" className="tabs-lifted font-work-sans">
         <NavLink
+          onClick={() => settabToogle(true)}
           to=""
           role="tab"
-          className={({ isActive }) =>
-            isActive ? "tab tab-active text-[#13131380]" : "tab"
-          }
+          className={`${tabToogle ? " tab-active text-[#13131380]" : " "} tab`}
         >
           Read Books
         </NavLink>
         <NavLink
+          onClick={() => settabToogle(false)}
           to="wishlist"
           role="tab"
-          className={({ isActive }) =>
-            isActive ? "tab tab-active text-[#13131380]" : "tab"
-          }
+          className={`${tabToogle ? " " : "tab-active text-[#13131380]"} tab`}
         >
           Wishlist Books
         </NavLink>
       </div>
-      <Outlet></Outlet>
+      <Outlet test={"test"}></Outlet>
     </div>
   );
 };
