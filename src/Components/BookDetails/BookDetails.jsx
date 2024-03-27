@@ -63,8 +63,12 @@ export const BookDetails = () => {
         theme="colored"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 font-work-sans">
-        <div className="flex rounded-md min-w-[500px]  justify-center bg-[#F3F3F3] items-center">
-          <img src={image} alt="" className="rounded-md" />
+        <div className="flex rounded-lg md:p-16 p-10 justify-center bg-[#F3F3F3] items-center">
+          <img
+            src={image}
+            alt=""
+            className="rounded-md md:max-w-[300px] max-w-[200px]"
+          />
         </div>
         <div>
           <div className="space-y-4 py-5 border-b flex-grow border-[#13131326]">

@@ -42,7 +42,7 @@ export const PageToRead = () => {
   return (
     <>
       {readBooksData.length > 0 ? (
-        <ResponsiveContainer className="min-h-96  m-2 rounded-lg p-5 bg-[#13131308]">
+        <ResponsiveContainer className="min-h-96  m-2 font-font-work-sans text-xs md:text-base rounded-lg p-5 bg-[#13131308]">
           <BarChart
             data={readBooksData}
             margin={{
