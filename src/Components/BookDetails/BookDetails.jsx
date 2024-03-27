@@ -90,7 +90,7 @@ export const BookDetails = () => {
               <Catagory key={idx} tagname={el} />
             ))}
           </div>
-          <table className="table max-w-96">
+          <table className="table max-w-96 border-separate">
             <tbody>
               <tr>
                 <td>Number of Pages:</td>
