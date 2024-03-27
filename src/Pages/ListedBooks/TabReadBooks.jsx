@@ -15,11 +15,14 @@ export const TabReadBooks = () => {
       const prevData = getIteam("read");
       const matchingData = data.filter((el) => prevData.includes(el.bookId));
       if (contextData === "publisher") {
-        console.log(matchingData);
+        const data = sortingFuction(matchingData, "publisher");
+        setbooksData(data);
       } else if (contextData === "page") {
-        console.log(matchingData);
+        const data = sortingFuction(matchingData, "page");
+        setbooksData(data);
       } else if (contextData === "rating") {
-        console.log(matchingData);
+        const data = sortingFuction(matchingData, "rating");
+        setbooksData(data);
       } else {
         setbooksData(matchingData);
       }

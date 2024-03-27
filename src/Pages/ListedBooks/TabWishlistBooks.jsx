@@ -15,12 +15,13 @@ export const TabWishlistBooks = () => {
       const matchingData = data.filter((el) => prevData.includes(el.bookId));
       if (contextData === "publisher") {
         const data = sortingFuction(matchingData, "publisher");
-        data.forEach((el) => console.log(el.publisher));
+        setbooksData(data);
       } else if (contextData === "page") {
         const data = sortingFuction(matchingData, "page");
-        console.log(data);
+        setbooksData(data);
       } else if (contextData === "rating") {
-        console.log(matchingData);
+        const data = sortingFuction(matchingData, "rating");
+        setbooksData(data);
       } else {
         setbooksData(matchingData);
       }
