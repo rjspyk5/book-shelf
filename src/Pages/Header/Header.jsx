@@ -108,8 +108,8 @@ export const Header = () => {
         <ul className="menu menu-horizontal ">{menu}</ul>
       </div>
       <div className="navbar-end flex gap-2 *:text-[white]">
-        <NavLink className="btn-sm btn md:btn-md bg-pri  ">Button</NavLink>
-        <NavLink className="btn-sm btn md:btn-md bg-[#59C6D2]">Button</NavLink>
+        <NavLink className="btn-sm btn md:btn-md bg-pri  ">Sign In</NavLink>
+        <NavLink className="btn-sm btn md:btn-md bg-[#59C6D2]">Sign Up</NavLink>
       </div>
     </div>
   );

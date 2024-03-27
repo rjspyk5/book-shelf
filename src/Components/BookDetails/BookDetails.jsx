@@ -17,18 +17,18 @@ export const BookDetails = () => {
       removeIteam("wishlist", value);
       const test = setIteam(key, value);
       test
-        ? notifySuccess("Successfully to readList")
-        : notifyError("You already added this on your readList");
+        ? notifySuccess("Successfully added to readList")
+        : notifyError("You've already read this book");
     } else {
       const preReadedBolg = getIteam("read");
       const checker = preReadedBolg.find((el) => el === value);
       if (!checker) {
         const test = setIteam(key, value);
         test
-          ? notifySuccess("Successfully to Wishlist")
-          : notifyError("You already added this on your Wishlist");
+          ? notifySuccess("Successfully added to Wishlist")
+          : notifyError("You've already added this on your Wishlist");
       } else {
-        notifyError("You already added this on your readList");
+        notifyError("You've already read this book");
       }
     }
   };

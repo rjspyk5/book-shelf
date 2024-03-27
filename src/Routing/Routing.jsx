@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
         loader: () => axios.get("/books.json"),
       },
       {
-        path: "/:bookId",
+        path: "/book/:bookId",
         element: <BookDetails />,
         loader: () => axios.get("/books.json"),
       },

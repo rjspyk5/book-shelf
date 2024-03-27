@@ -7,7 +7,7 @@ export const Book = ({ book }) => {
   const navigate = useNavigate();
   return (
     <div
-      onClick={() => navigate(`${bookId}`)}
+      onClick={() => navigate(`/book/${bookId}`)}
       className="p-6 flex flex-col rounded-2xl border border-[#13131326]"
     >
       <div className="flex w-full py-10 rounded-lg justify-center bg-[#F3F3F3] items-center">
