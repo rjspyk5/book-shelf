@@ -67,7 +67,11 @@ export const PageToRead = () => {
           </BarChart>
         </ResponsiveContainer>
       ) : (
-        "No books read yet"
+        <div className="min-h-96 flex items-center justify-center">
+          <h1 className="text-center font-bold text-2xl font-work-sans">
+            No books read yet
+          </h1>
+        </div>
       )}
     </>
   );

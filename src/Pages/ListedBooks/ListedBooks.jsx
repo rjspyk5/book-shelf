@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { IoIosArrowUp } from "react-icons/io";
+
 import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
 import { createContext } from "react";
 export const sortingContext = createContext();
 export const ListedBooks = () => {
-  const [toggle, settoggle] = useState(true);
   const [tabToogle, settabToogle] = useState(true);
   const [sortType, setsortType] = useState("default");
   const handleSrotingClick = (value) => {
@@ -22,10 +21,9 @@ export const ListedBooks = () => {
           <div
             tabIndex={0}
             role="button"
-            onClick={() => settoggle(!toggle)}
             className="btn m-1 bg-pri text-[white]"
           >
-            Sort By {toggle ? <IoIosArrowDown /> : <IoIosArrowUp />}
+            Sort By <IoIosArrowDown />
           </div>
           <ul
             tabIndex={0}
