@@ -1,31 +1,11 @@
 import PropTypes from "prop-types";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 export const CardComing = ({ book }) => {
   const { image, bookName, category, rating, author } = book;
-  const notify = () => {
-    toast.info("Not available yet!");
-  };
 
   return (
     <div>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-      />
-      <div
-        onClick={() => notify()}
-        className="p-6 bg-[#f7f7f7] flex flex-col duration-1000 rounded-2xl border border-[#13131326]"
-      >
+      <div className="p-6 bg-[#f7f7f7] flex flex-col duration-1000 rounded-2xl border border-[#13131326]">
         <div className="flex w-full py-10 rounded-lg justify-center bg-[#F3F3F3] items-center">
           <img
             src={image}
