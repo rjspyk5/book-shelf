@@ -1,7 +1,7 @@
-import React from "react";
+import PropTypes from "prop-types";
 
 export const CardComing = ({ book }) => {
-  const { image, bookName, category, tags, rating, author, bookId } = book;
+  const { image, bookName, category, rating, author } = book;
   return (
     <div>
       <div className="p-6 flex flex-col rounded-2xl border border-[#13131326]">
@@ -23,4 +23,7 @@ export const CardComing = ({ book }) => {
       </div>
     </div>
   );
+};
+CardComing.propTypes = {
+  book: PropTypes.object,
 };

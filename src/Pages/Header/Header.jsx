@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 export const Header = () => {
   const menu = (
     <>
-      {" "}
       <li>
         <NavLink
           to="/"
@@ -108,8 +107,8 @@ export const Header = () => {
         <ul className="menu menu-horizontal ">{menu}</ul>
       </div>
       <div className="navbar-end flex gap-2 *:text-[white]">
-        <NavLink className="btn-sm btn md:btn-md bg-pri  ">Sign In</NavLink>
-        <NavLink className="btn-sm btn md:btn-md bg-[#59C6D2]">Sign Up</NavLink>
+        <button className="btn-sm btn md:btn-md bg-pri">Sign In</button>
+        <button className="btn-sm btn md:btn-md bg-[#59C6D2]">Sign Up</button>
       </div>
     </div>
   );

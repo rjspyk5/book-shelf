@@ -1,5 +1,3 @@
-import React from "react";
-
 export const About = () => {
   return (
     <div className="font-work-sans  mt-5 w-2/3 mx-auto">
