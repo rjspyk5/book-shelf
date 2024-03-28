@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
 import { createContext } from "react";
@@ -10,7 +9,6 @@ export const ListedBooks = () => {
   const handleSrotingClick = (value) => {
     setsortType(value);
   };
-
   return (
     <div>
       <h1 className="py-6 font-work-sans rounded-md text-center font-bold text-2xl bg-[#1313130D]">
