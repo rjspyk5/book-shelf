@@ -12,12 +12,20 @@ export const ErrorPage = () => {
         <p>
           <i>{error.statusText || error.message}</i>
         </p>
-        <button
-          onClick={() => navigate(-1)}
-          className="btn-xs btn sm:btn-sm md:btn-md btn-outline mt-2"
-        >
-          Go Back
-        </button>
+        <div>
+          <button
+            onClick={() => navigate(-1)}
+            className="btn-xs btn sm:btn-sm md:btn-md btn-outline mt-2"
+          >
+            Go Back
+          </button>{" "}
+          <button
+            onClick={() => navigate("/")}
+            className="btn-xs btn sm:btn-sm md:btn-md btn-outline mt-2"
+          >
+            Go Home
+          </button>
+        </div>
       </div>
     </div>
   );
