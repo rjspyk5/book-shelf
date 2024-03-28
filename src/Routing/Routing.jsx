@@ -8,6 +8,8 @@ import { TabReadBooks } from "../Pages/ListedBooks/TabReadBooks";
 import { TabWishlistBooks } from "../Pages/ListedBooks/TabWishlistBooks";
 import { BookDetails } from "../Components/BookDetails/BookDetails";
 import { ErrorPage } from "../Components/ErrorPage/ErrorPage";
+import { About } from "../Pages/About/About";
+import { Coming } from "../Pages/Coming/Coming";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ export const router = createBrowserRouter([
             loader: () => axios.get("/books.json"),
           },
         ],
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/coming",
+        element: <Coming />,
       },
       {
         path: "/read",

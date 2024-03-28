@@ -54,14 +54,14 @@ export const Header = () => {
       </li>
       <li>
         <NavLink
-          to="/bestseller"
+          to="/about"
           className={({ isActive }) =>
             isActive
               ? "border border-pri bg-transparent text-pri font-semibold"
               : ""
           }
         >
-          Bestseller books
+          About Us
         </NavLink>
       </li>
     </>
