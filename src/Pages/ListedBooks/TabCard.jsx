@@ -87,7 +87,7 @@ export const TabCard = ({ book }) => {
             class={"text-[#FFAC33] bg-[#FFAC3326]  font-normal"}
             tagname={`Rating:${rating}`}
           />
-          <Link to={`/${bookId}`}>
+          <Link to={`/book/${bookId}`}>
             <Catagory
               class={"text-[white] bg-pri  font-medium"}
               tagname={`View Details`}
