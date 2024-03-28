@@ -1,0 +1,80 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "Mistborn: The Final Empire",
+        "author": "Brandon Sanderson",
+        "image": "<image_url>",
+        "review": "A tale of a heist set against a backdrop of political intrigue and magical martial-arts action in a world where ash falls from the sky.",
+        "totalPages": 541,
+        "rating": 4.44,
+        "category": "Fantasy",
+        "tags": ["Epic", "Magic"],
+        "publisher": "Tor Books",
+        "yearOfPublishing": 2006
+    }, {
+        "bookId": 2,
+        "bookName": "The Name of the Wind",
+        "author": "Patrick Rothfuss",
+        "image": "<image_url>",
+        "review": "An intricate and compelling narrative following the life of Kvothe, a gifted young man who grows to be the most notorious wizard his world has ever seen.",
+        "totalPages": 662,
+        "rating": 4.55,
+        "category": "Fantasy",
+        "tags": ["Epic", "Adventure"],
+        "publisher": "DAW Books",
+        "yearOfPublishing": 2007
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Eye of the World",
+        "author": "Robert Jordan",
+        "image": "<image_url>",
+        "review": "The first book in the 'Wheel of Time' series, it sets off an epic tale of destiny, magic, and power, with a richly developed world.",
+        "totalPages": 782,
+        "rating": 4.18,
+        "category": "Fantasy",
+        "tags": ["Epic", "High Fantasy"],
+        "publisher": "Tor Books",
+        "yearOfPublishing": 1990
+    },
+    {
+        "bookId": 4,
+        "bookName": "A Game of Thrones",
+        "author": "George R.R. Martin",
+        "image": "<image_url>",
+        "review": "A political and multi-layered saga set in a world where summers span decades and winters can last a lifetime. The struggle for the Iron Throne has begun.",
+        "totalPages": 694,
+        "rating": 4.45,
+        "category": "Fantasy",
+        "tags": ["Epic", "Political"],
+        "publisher": "Bantam Books",
+        "yearOfPublishing": 1996
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Fifth Season",
+        "author": "N.K. Jemisin",
+        "image": "<image_url>",
+        "review": "In a world where the earth is fraught with seismic catastrophes, the story intertwines the lives of three women in a fight for survival.",
+        "totalPages": 468,
+        "rating": 4.3,
+        "category": "Fantasy",
+        "tags": ["Dystopian", "Epic"],
+        "publisher": "Orbit",
+        "yearOfPublishing": 2015
+    },
+    {
+        "bookId": 6,
+        "bookName": "Mistborn: The Final Empire",
+        "author": "Brandon Sanderson",
+        "image": "<image_url>",
+        "review": "A tale of a heist set against a backdrop of political intrigue and magical martial-arts action in a world where ash falls from the sky.",
+        "totalPages": 541,
+        "rating": 4.44,
+        "category": "Fantasy",
+        "tags": ["Epic", "Magic"],
+        "publisher": "Tor Books",
+        "yearOfPublishing": 2006
+    }
+    
+]

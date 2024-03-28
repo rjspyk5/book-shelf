@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div className="font-work-sans flex flex-col justify-center items-center mt-5">
+    <div className="font-work-sans  mt-5 w-2/3 mx-auto">
       <h1 className="text-center text-2xl font-medium">
         Welcome to Bookshelf, where our passion for literature drives us to
         create an immersive platform for book lovers worldwide.
