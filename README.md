@@ -1,4 +1,5 @@
 # Website Name: BookShelf
+Thus is mainly a book showcasing website.whre can ne see book details can be mark as read,and can be add on wishlist.
 
 # Live Link: https://bookshellf.netlify.app/
 
